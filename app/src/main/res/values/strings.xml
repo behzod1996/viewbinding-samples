@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ViewBindingSamples</string>
+    <string name="tv_title">Title: Behzod</string>
+    <string name="tv_description">Description: Student</string>
+    <string name="tv_date">Date: 2021.12.02</string>
+    <string name="tiet_text">Enter a something</string>
+    <string name="btn_save">Save</string>
+    <string name="text_fragment_one">Fragment One</string>
+    <string name="text_fragment_two">Fragment Two</string>
+
 </resources>
