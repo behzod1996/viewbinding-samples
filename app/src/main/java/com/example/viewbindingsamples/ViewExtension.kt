@@ -22,6 +22,7 @@ fun Fragment.toast(message: String) {
 
 // It helps to replace easily fragments in activity
 // https://stackoverflow.com/questions/45713747/any-code-improvement-in-adding-replacing-fragment
+// https://proandroiddev.com/kotlin-extensions-to-commit-fragments-safely-de06218a1f4
 fun AppCompatActivity.replaceFragmentSafely(
     fragment: Fragment,
     @IdRes resId: Int
