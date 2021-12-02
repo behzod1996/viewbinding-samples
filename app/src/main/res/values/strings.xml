@@ -7,5 +7,9 @@
     <string name="btn_save">Save</string>
     <string name="text_fragment_one">Fragment One</string>
     <string name="text_fragment_two">Fragment Two</string>
+    <string name="text_done">Done</string>
+    <string name="et_hint">Enter a some text</string>
+    <string name="text_enter">Enter a something</string>
+    <string name="text_fragment_three">Fragment Three</string>
 
 </resources>

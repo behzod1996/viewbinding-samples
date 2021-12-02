@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginBottom="320dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <FrameLayout
+            android:id="@+id/fragment_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+
+    </androidx.cardview.widget.CardView>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_text"
@@ -15,6 +34,7 @@
         app:counterMaxLength="50"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginTop="200dp"
         app:boxBackgroundColor="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,10 +66,10 @@
         android:id="@+id/btn_navigate_fragment_one"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="636dp"
+        android:layout_marginTop="45dp"
         android:backgroundTint="@color/purple_200"
         android:text="@string/text_fragment_one"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent" />
@@ -58,11 +78,24 @@
         android:id="@+id/btn_navigate_fragment_two"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="636dp"
+        android:layout_marginTop="45dp"
         android:backgroundTint="@color/purple_200"
         android:text="@string/text_fragment_two"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_navigate_fragment_three"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/purple_200"
+        android:text="@string/text_fragment_three"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
