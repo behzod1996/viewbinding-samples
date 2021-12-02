@@ -7,6 +7,7 @@ import android.util.Log
 import com.example.viewbindingsamples.databinding.ActivityMainBinding
 
 // To set up an instance of the binding class for use with an activity
+
 class MainActivity : AppCompatActivity() {
 
     // Create an instance of ActivityMainBinding
@@ -25,6 +26,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         title = "ViewBinding in Android"
         setUpBinding()
+        replace()
+    }
+    private fun replace() {
+        binding.btnNavigateFragmentOne.setOnClickListener {
+            Log.d("Message","Navigate Fragment One")
+            replaceFragmentSafely(FragmentOne(),R.id.fragment_holder)
+        }
+        binding.btnNavigateFragmentTwo.setOnClickListener {
+            Log.d("Message","Navigate Fragment Two")
+            replaceFragmentSafely(FragmentTwo(),R.id.fragment_holder)
+        }
+        binding.btnNavigateFragmentThree.setOnClickListener {
+            Log.d("Message","Navigate Fragment Three")
+            replaceFragmentSafely(FragmentThree(),R.id.fragment_holder)
+        }
     }
 
 
